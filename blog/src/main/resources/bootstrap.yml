@@ -1,0 +1,18 @@
+server:
+  port: 9011
+  sessionTimeout: 30
+  contextPath: /
+
+spring:
+  session:
+    store-type: redis
+  application:
+    name: blog
+  thymeleaf:
+    cache: false
+    check-template-location: false
+    content-type: text/html
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
